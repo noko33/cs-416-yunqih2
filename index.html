@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Evolution: 2010-2022</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bitcoin"></i> Bitcoin Price Evolution: 2010-2022</h1>
+            <p class="subtitle">An interactive journey through Bitcoin's price history and key events</p>
+        </header>
+        
+        <div class="visualization-container">
+            <div class="timeline-bar">
+                <div class="progress" id="timeline-progress"></div>
+            </div>
+            
+            <div class="scene-container">
+                <div class="chart-container" id="chart"></div>
+                <div class="events-container" id="events"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="prev-btn" class="nav-button" disabled>
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                
+                <div class="stage-indicator">
+                    <div class="stage-dot active" data-stage="0"></div>
+                    <div class="stage-dot" data-stage="1"></div>
+                    <div class="stage-dot" data-stage="2"></div>
+                    <div class="stage-dot" data-stage="3"></div>
+                </div>
+                
+                <button id="next-btn" class="nav-button">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Data Source: Historical Bitcoin Price Data (2010-2022) | Visualization by Financial Insights</p>
+            <p>© 2023 Cryptocurrency Historical Analysis. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
